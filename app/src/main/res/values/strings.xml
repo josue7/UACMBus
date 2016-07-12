@@ -5,4 +5,12 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Inicio del texto para cada día de la semana -->
+        <string name="L">Lunes</string>
+        <string name="M">Martes</string>
+        <string name="M1">Miercoles</string>
+        <string name="J">Jueves</string>
+        <string name="V">Viernes</string>
+    <!-- Fin de descripción semanal -->
 </resources>
