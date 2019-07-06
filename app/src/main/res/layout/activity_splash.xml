@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/amarillo_degradado"
+    android:weightSum="1">
+    <ImageButton
+        android:layout_width="161dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageButton"
+        android:background="@mipmap/ic_logbus"
+        android:layout_centerHorizontal="true"
+        android:layout_row="1"
+        android:layout_column="7"
+        android:layout_gravity="center" />
+
+</FrameLayout>

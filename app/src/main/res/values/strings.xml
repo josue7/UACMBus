@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UACMBus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dev">Esta aplicación fue desarrollada por Josué Marfil. Impulsado por MOBA(UACM);</string>
+    <string name="lucro">Además, es de uso exclusivo para los estudiantes de la UACM y distribuida sin fines de lucro</string>
+</resources>

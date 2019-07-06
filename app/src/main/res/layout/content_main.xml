@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/principal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mobauacm.naveli.com.uacmbus.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!-- Se declara el contenido principal del conjunto de pestañas -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Este distribuye las secciones principales del layout -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- En esta parte se representa la seccion de pestañas -->
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:id="@android:id/tabs"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Se agrega un este para estableces el contenido de cada tab -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@android:id/tabcontent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab1">
+
+                        <!-- Este texto es para la fecha -->
+                        <TextView
+                            android:id="@+id/fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="15dp"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="18dp" />
+
+                        <!-- Empieza el cardview de la corrida 1-->
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            card_view:cardCornerRadius="4dp"
+                            android:elevation="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/imagen1"
+                                    android:src="@mipmap/ic_bus_amarillo"/>
+                                <!-- Empieza el texto para la corrida del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/corrida1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:fontFamily="serif"
+                                    android:padding="15dp"
+                                    android:layout_toRightOf="@+id/imagen1"
+                                    android:text="Cuatepec - La raza" />
+                                <!-- Termina el texto para la corrida del camion amarillo -->
+
+                                <!-- Empieza el texto para el horario del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/hora1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/corrida1"
+                                    android:layout_toRightOf="@+id/imagen1"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Hora de salida: 14:30"/>
+                                <!-- Termina el texto para el horario del camion amarillo -->
+
+                                <!-- Empieza el texto para el estatus del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/estado1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/hora1"
+                                    android:layout_toRightOf="@+id/imagen1"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text=""/>
+                                <!-- Termina el texto para el estatus del camion amarillo -->
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <!-- Termina el cardview de la corrida 1-->
+
+                        <!-- Empieza el cardview de la corrida 2 -->
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            card_view:cardCornerRadius="4dp"
+                            android:elevation="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/imagen2"
+                                    android:src="@mipmap/ic_bus_amarillo"/>
+                                <!-- Empieza el texto para la corrida del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/corrida2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:fontFamily="serif"
+                                    android:padding="15dp"
+                                    android:layout_toRightOf="@+id/imagen2"
+                                    android:text="La raza - Cuatepec" />
+                                <!-- Termina el texto para la corrida del camion amarillo -->
+
+                                <!-- Empieza el texto para el horario del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/hora2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/corrida2"
+                                    android:layout_toRightOf="@+id/imagen2"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Hora de salida: 15:20"/>
+                                <!-- Termina el texto para el horario del camion amarillo -->
+
+                                <!-- Empieza el texto para el estatus del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/estado2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/hora2"
+                                    android:layout_toRightOf="@+id/imagen2"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text=""/>
+                                <!-- Termina el texto para el estatus del camion amarillo -->
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <!-- Termina el cardview de la corrida 2-->
+
+                        <!-- Empieza el cardview de la corrida 3 -->
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            card_view:cardCornerRadius="4dp"
+                            android:elevation="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/imagen3"
+                                    android:src="@mipmap/ic_bus_amarillo"/>
+                                <!-- Empieza el texto para la corrida del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/corrida3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17dp"
+                                    android:fontFamily="serif"
+                                    android:padding="15dp"
+                                    android:layout_toRightOf="@+id/imagen3"
+                                    android:text="Cuatepec - Indios V." />
+                                <!-- Termina el texto para la corrida del camion amarillo -->
+
+                                <!-- Empieza el texto para el horario del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/hora3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/corrida3"
+                                    android:layout_toRightOf="@+id/imagen3"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Hora de salida: 20:40"/>
+                                <!-- Termina el texto para el horario del camion amarillo -->
+
+                                <!-- Empieza el texto para el estatus del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/estado3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/hora3"
+                                    android:layout_toRightOf="@+id/imagen3"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text=""/>
+                                <!-- Termina el texto para el estatus del camion amarillo -->
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <!-- Termina el cardview de la corrida 3 -->
+
+                    </LinearLayout>
+
+                    <!-- Empieza el tab2 -->
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Este texto es para la fecha -->
+                        <TextView
+                            android:id="@+id/fecha2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="15dp"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="18dp" />
+
+                        <!-- Empieza el cardview de la corrida 5-->
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            card_view:cardCornerRadius="4dp"
+                            android:elevation="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/imagen4"
+                                    android:src="@mipmap/ic_bus_red"/>
+                                <!-- Empieza el texto para la corrida del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/corrida4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:fontFamily="serif"
+                                    android:padding="15dp"
+                                    android:layout_toRightOf="@+id/imagen4"
+                                    android:text="Cuatepec - La raza"/>
+                                <!-- Termina el texto para la corrida del camion amarillo -->
+
+                                <!-- Empieza el texto para el horario del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/hora4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/corrida4"
+                                    android:layout_toRightOf="@+id/imagen4"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Hora de salida: 20:40"/>
+                                <!-- Termina el texto para el horario del camion amarillo -->
+
+                                <!-- Empieza el texto para el estatus del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/estado4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/hora4"
+                                    android:layout_toRightOf="@+id/imagen4"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text=""/>
+                                <!-- Termina el texto para el estatus del camion amarillo -->
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <!-- Termina el cardview de la corrida 5-->
+
+                        <!-- Empieza el cardview de la corrida 6 -->
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            card_view:cardCornerRadius="4dp"
+                            android:elevation="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/imagen5"
+                                    android:src="@mipmap/ic_bus_red"/>
+                                <!-- Empieza el texto para la corrida del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/corrida5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:fontFamily="serif"
+                                    android:padding="15dp"
+                                    android:layout_toRightOf="@+id/imagen5"
+                                    android:text="Cuautepec - La raza"/>
+                                <!-- Termina el texto para la corrida del camion amarillo -->
+
+                                <!-- Empieza el texto para el horario del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/hora5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/corrida5"
+                                    android:layout_toRightOf="@+id/imagen5"
+                                    android:textAlignment="center"
+                                    android:textSize="15dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Hora de salida: 22:10"/>
+                                <!-- Termina el texto para el horario del camion amarillo -->
+
+                                <!-- Empieza el texto para el estatus del camion amarillo -->
+                                <TextView
+                                    android:id="@+id/estado5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/hora5"
+                                    android:layout_toRightOf="@+id/imagen5"
+                                    android:textSize="15dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif"
+                                    android:text=""/>
+                                <!-- Termina el texto para el estatus del camion amarillo -->
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <!-- Termina el cardview de la corrida 6-->
+
+                    </LinearLayout>
+
+                </FrameLayout>
+                <!-- Termina la parte de agregar contenido -->
+
+            </ScrollView>
+
+        </LinearLayout>
+        <!-- Termina el contenido de los tabs -->
+
+    </TabHost>
+
+</LinearLayout>

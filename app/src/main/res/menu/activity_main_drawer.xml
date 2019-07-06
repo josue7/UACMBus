@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Los id con nombre dia1 al dia5 se refieren a lunes al viernes -->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dia1"
+            android:icon="@mipmap/l"
+            android:title="Lunes" />
+        <item
+            android:id="@+id/dia2"
+            android:icon="@mipmap/mi"
+            android:title="Martes" />
+        <item
+            android:id="@+id/dia3"
+            android:icon="@mipmap/mi"
+            android:title="Miercoles" />
+        <item
+            android:id="@+id/dia4"
+            android:icon="@mipmap/ju"
+            android:title="Jueves" />
+        <item
+            android:id="@+id/dia5"
+            android:icon="@mipmap/vi"
+            android:title="Vienes" />
+    </group>
+
+    <item
+        android:id="@+id/ayuda"
+        android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/develop"
+                android:title="Desarrolladores"
+                android:icon="@mipmap/ic_dev"/>
+        </menu>
+    </item>
+
+
+
+</menu>
