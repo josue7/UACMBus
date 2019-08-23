@@ -33,6 +33,11 @@
                 android:id="@+id/develop"
                 android:title="Desarrolladores"
                 android:icon="@mipmap/ic_dev"/>
+
+            <item
+                android:id="@+id/comentario"
+                android:title="Comentar"
+                android:icon="@drawable/ic_comment"/>
         </menu>
     </item>
 

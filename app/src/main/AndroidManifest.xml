@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Comentario"></activity>
         <activity
             android:name=".Splash"
             android:label="@string/app_name"
@@ -23,7 +24,6 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Aviso" />
-        <!--activity android:name=".Desarrollador"/-->
     </application>
 
 </manifest>

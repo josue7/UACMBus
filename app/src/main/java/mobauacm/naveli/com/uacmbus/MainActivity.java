@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         DatabaseReference baseUacm = FirebaseDatabase.getInstance().getReference();
         DatabaseReference mensaje;
-        final Intent mainIntent = new Intent();
+        Intent mainIntent = new Intent();
 
         int id = item.getItemId();
         final TextView fecha = (TextView) findViewById(R.id.fecha);
@@ -827,6 +827,9 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.executePendingTransactions();
             Desarrollador dialogo = new Desarrollador();
             dialogo.show(fragmentManager, "");
+        } else if (id == R.id.comentario){
+            mainIntent = new Intent().setClass(MainActivity.this, Comentario.class);
+            startActivity(mainIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
